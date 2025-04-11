@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    cursor: url('./src/assets/curson.cur'), auto;
+  }
+
+  .hljs {
+    background: transparent;
+  }

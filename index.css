@@ -1,0 +1,12 @@
+body {
+    cursor: url('./assets/curson.ani'), pointer;
+  }
+
+.cursor {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transition: all linear 0.2s;
+}

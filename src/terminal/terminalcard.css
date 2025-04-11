@@ -1,0 +1,102 @@
+/* Basic terminal styling */
+body {
+    /* background-color: #1f2937; Dark background */
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+  }
+  
+  .terminal {
+    margin-top: 2.5em;
+    width: 45em;
+    background-color: #282c34; /* Terminal dark background */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #C7EDEF;
+    font-size: 16px;
+  }
+  
+  .terminal-output {
+    margin-left: 20px; /* indent to simulate terminal output */
+    color: #b5bd68; /* light green color for output */
+  }
+
+  .terminal-output-span {
+    margin-left: 20px; /* indent to simulate terminal output */
+    color: #959f3b; /* light green color for output */
+  }
+  
+
+  .terminal-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e252d; /* Terminal header */
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .terminal-buttons {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 8px;
+  }
+  
+  .button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .red {
+    background-color: #ff605c;
+  }
+  
+  .yellow {
+    background-color: #ffbd44;
+  }
+  
+  .green {
+    background-color: #00ca4e;
+  }
+  
+  .terminal-title {
+    color: #C7EDEF;
+    font-weight: bold;
+
+  }
+  
+  .terminal-body {
+    background-color: #282c34;
+    padding: 20px;
+    color: #ffffff;
+    min-height: 400px;
+  }
+  
+  .terminal-prompt {
+    color: #61dafb;
+  }
+  
+  a {
+    color: #C7EDEF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .terminal-cursor {
+    color: #ffffff;
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  

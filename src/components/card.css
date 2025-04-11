@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+/* Overall layout for the page */
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: hsl(0, 0%, 10%);
+  }
+  
+  .grid__item {
+    position: relative;
+    width: 14rem; /* Adjusted width to fit your layout */
+    border-radius: 10px;
+  }
+  
+  .item__content {
+    transition: transform 0.2s;
+    transform: translate(0, 0);
+    padding: 1rem;
+    background-color: #1e1e20; /* Slate Blue background for the card */
+    border: 0.5px solid #807e8e; /* Slate Blue border */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    color: #F3F4F6; /* Text color for contrast */
+  }
+  
+  /* Hover effect */
+  .item:hover {
+    --expand: 1;
+  }
+  
+  .item:hover .item__content {
+    transform: translate(calc(var(--expand) * -4%), calc(var(--expand) * -4%));
+  }
+  
+  .item:before,
+  .item:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: hsl(0, 0%, 5%);
+    border: 0.5px solid rgb(156, 154, 154);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.25s;
+    border-radius: 10px;
+  }
+  
+  .item:after {
+    transform: translate(calc(var(--expand) * -2%), calc(var(--expand) * -2%));
+  }
+  
+  a {
+    color: #c7edef; /* Link color */
+  }
+
+.desc-text {
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+
+  

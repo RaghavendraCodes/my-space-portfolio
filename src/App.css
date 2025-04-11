@@ -1,0 +1,49 @@
+.name-text {
+    font-family: "system-ui", Roboto, "Helvetica Neue", sans-serif;
+}
+/* 
+.cursor-rocket {
+    cursor: url('./assets/caa47309596a4dfeb5637478261fdeb1.cur'), auto;
+    cursor: url('./assets/caa47309596a4dfeb5637478261fdeb1.cur'), pointer;
+} */
+    
+/* App.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll on small screens */
+  }
+  
+  .custom-cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .cursor-rocket {
+    overflow: hidden;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .cursor-rocket {
+    cursor: none;
+  }
+  

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+.text {
+    font-family: "Delius", cursive;
+}
+
+.desc-text {
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+.background {
+    background-color: #1e1e20
+}
